@@ -1,0 +1,125 @@
+fileFormatVersion: 2
+guid: 8202e285da8e244d2b1488f2572efbfc
+timeCreated: 1520442952
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: crayonsponer2:crayons1:pCylinder21_crayonsponer2:crayons1:group9
+    100004: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder31
+    100006: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder34
+    100008: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder40
+    100010: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder46
+    100012: crayonsponer2:crayons:pCylinder10_crayonsponer2:crayons:group9
+    400000: //RootNode
+    400002: crayonsponer2:crayons1:pCylinder21_crayonsponer2:crayons1:group9
+    400004: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder31
+    400006: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder34
+    400008: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder40
+    400010: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder46
+    400012: crayonsponer2:crayons:pCylinder10_crayonsponer2:crayons:group9
+    2100000: crayonsponer2_crayons1_pCylinder21_crayonsponer2_crayons1_group9Mat
+    2100002: crayonsponer2_crayons_group9_crayonsponer2_crayons_pCylinder31Mat
+    2100004: crayonsponer2_crayons_group9_crayonsponer2_crayons_pCylinder34Mat
+    2100006: crayonsponer2_crayons_group9_crayonsponer2_crayons_pCylinder40Mat
+    2100008: crayonsponer2_crayons_group9_crayonsponer2_crayons_pCylinder46Mat
+    2100010: crayonsponer2_crayons_pCylinder10_crayonsponer2_crayons_group9Mat
+    2300000: crayonsponer2:crayons1:pCylinder21_crayonsponer2:crayons1:group9
+    2300002: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder31
+    2300004: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder34
+    2300006: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder40
+    2300008: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder46
+    2300010: crayonsponer2:crayons:pCylinder10_crayonsponer2:crayons:group9
+    3300000: crayonsponer2:crayons1:pCylinder21_crayonsponer2:crayons1:group9
+    3300002: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder31
+    3300004: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder34
+    3300006: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder40
+    3300008: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder46
+    3300010: crayonsponer2:crayons:pCylinder10_crayonsponer2:crayons:group9
+    4300000: crayonsponer2:crayons1:pCylinder21_crayonsponer2:crayons1:group9
+    4300002: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder31
+    4300004: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder34
+    4300006: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder40
+    4300008: crayonsponer2:crayons:group9_crayonsponer2:crayons:pCylinder46
+    4300010: crayonsponer2:crayons:pCylinder10_crayonsponer2:crayons:group9
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
