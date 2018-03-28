@@ -51,14 +51,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
-     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
-     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
-     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
+     <Compile Include="Assets\Customizable_Furnture\Source\Scripts\CleanUpAll.cs" />
+     <Compile Include="Assets\Customizable_Furnture\Source\Scripts\Clock\AnalogicClock.cs" />
+     <Compile Include="Assets\Customizable_Furnture\Source\Scripts\Clock\ClockTimer.cs" />
+     <Compile Include="Assets\Customizable_Furnture\Source\Scripts\Clock\DigitalClock.cs" />
+     <Compile Include="Assets\Customizable_Furnture\Source\Scripts\Clock\DigitalClockValue.cs" />
+     <Compile Include="Assets\Customizable_Furnture\Source\Scripts\DisplayFrame.cs" />
+     <Compile Include="Assets\Customizable_Furnture\Source\Scripts\DisplaySelectedObject.cs" />
+     <Compile Include="Assets\Customizable_Furnture\Source\Scripts\OptionsDisplay.cs" />
+     <Compile Include="Assets\Customizable_Furnture\Source\Scripts\OptionsDisplaySaveVar.cs" />
+     <Compile Include="Assets\Customizable_Furnture\Source\Scripts\PlayVideo.cs" />
+     <Compile Include="Assets\Customizable_Furnture\Source\Scripts\SimpleSwitchMaterial.cs" />
      <None Include="Assets\hat\archibase.net.txt" />
      <None Include="Assets\InsideOut.shader" />
-     <None Include="Assets\stuffed elephant\archibase.net.txt" />
-     <None Include="Assets\Customizable_Furnture\Readme\Readme.txt" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>
