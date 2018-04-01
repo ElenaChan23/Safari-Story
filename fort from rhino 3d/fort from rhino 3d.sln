@@ -1,11 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fort from rhino 3d", "Assembly-CSharp-firstpass.csproj", "{3C272C3D-E5F0-1925-7410-54F25F9EFFD5}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fort from rhino 3d.Plugins", "fort from rhino 3d.Plugins.csproj", "{EB2A9DC7-7ADF-5325-3514-9478FE739DA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fort from rhino 3d", "Assembly-CSharp.csproj", "{D7F74BCE-3C8B-F637-1327-9386D1C84D9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fort from rhino 3d", "fort from rhino 3d.csproj", "{74D4FC01-AC28-4C9B-20CA-B978166DDB10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fort from rhino 3d", "Assembly-CSharp-Editor-firstpass.csproj", "{7FE44C8C-CB6F-D6F0-6564-3CA320354487}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fort from rhino 3d.Editor.Plugins", "fort from rhino 3d.Editor.Plugins.csproj", "{E32869F6-578D-31C9-C7DA-2C1BDEC95A7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,23 +13,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3C272C3D-E5F0-1925-7410-54F25F9EFFD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C272C3D-E5F0-1925-7410-54F25F9EFFD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C272C3D-E5F0-1925-7410-54F25F9EFFD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C272C3D-E5F0-1925-7410-54F25F9EFFD5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D7F74BCE-3C8B-F637-1327-9386D1C84D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7F74BCE-3C8B-F637-1327-9386D1C84D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7F74BCE-3C8B-F637-1327-9386D1C84D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7F74BCE-3C8B-F637-1327-9386D1C84D9E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7FE44C8C-CB6F-D6F0-6564-3CA320354487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7FE44C8C-CB6F-D6F0-6564-3CA320354487}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7FE44C8C-CB6F-D6F0-6564-3CA320354487}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7FE44C8C-CB6F-D6F0-6564-3CA320354487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB2A9DC7-7ADF-5325-3514-9478FE739DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB2A9DC7-7ADF-5325-3514-9478FE739DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB2A9DC7-7ADF-5325-3514-9478FE739DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB2A9DC7-7ADF-5325-3514-9478FE739DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D4FC01-AC28-4C9B-20CA-B978166DDB10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D4FC01-AC28-4C9B-20CA-B978166DDB10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D4FC01-AC28-4C9B-20CA-B978166DDB10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D4FC01-AC28-4C9B-20CA-B978166DDB10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E32869F6-578D-31C9-C7DA-2C1BDEC95A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E32869F6-578D-31C9-C7DA-2C1BDEC95A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E32869F6-578D-31C9-C7DA-2C1BDEC95A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E32869F6-578D-31C9-C7DA-2C1BDEC95A7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
