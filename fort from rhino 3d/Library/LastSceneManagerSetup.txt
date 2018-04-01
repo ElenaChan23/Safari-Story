@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/fort.unity
+- path: Assets/_Scenes/Fixed_tent.unity
   isLoaded: 1
   isActive: 1
