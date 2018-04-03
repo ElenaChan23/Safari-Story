@@ -1,0 +1,24 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.IO;
+
+public class takePicture : MonoBehaviour {
+
+    public int imageWidth = 2048;
+    public bool saveAsJPEG = true;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            byte[] bytes = I360Render.Capture(imageWidth, saveAsJPEG);
+            if (bytes != null)
+            {
+                string path = Path.Combine(Application.persistentDataPath, "360render" + (saveAsJPEG ? ".jpeg" : ".png"));
+                File.WriteAllBytes(path, bytes);
+                Debug.Log("360 render saved to " + path);
+            }
+        }
+    }
+}
