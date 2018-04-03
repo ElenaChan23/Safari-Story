@@ -56,6 +56,11 @@ namespace VRStandardAssets.Utils
         {
             m_Selection.gameObject.SetActive(true);
             m_IsSelectionRadialActive = true;
+
+            if (m_IsSelectionRadialActive)
+            {
+                m_SelectionFillRoutine = StartCoroutine(FillSelectionRadial());
+            }
         }
 
 
