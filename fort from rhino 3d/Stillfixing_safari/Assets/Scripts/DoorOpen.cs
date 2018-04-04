@@ -9,6 +9,13 @@ public class DoorOpen : MonoBehaviour {
 
     public TimelineController timelines;
 
+	public AudioSource frontfeet;
+	public AudioSource backfeet;
+	public AudioClip trumpet;
+	public AudioClip horn;
+
+	public AudioSource elephantAudio;
+
     [SerializeField] private SelectionRadial m_SelectionRadial;         // This controls when the selection is complete.
     [SerializeField] private VRInteractiveItem m_InteractiveItem;       // The interactive item for where the user should click to load the level.
 
@@ -53,8 +60,17 @@ public class DoorOpen : MonoBehaviour {
     private void HandleSelectionComplete()
     {
         // If the user is looking at the rendering of the scene when the radial's selection finishes, activate the button.
-        if (m_GazeOver)
-            timelines.Play(); 
+		if (m_GazeOver) {
+			timelines.Play ();
+			backfeet.time = 1.0f;
+			frontfeet.Play ();
+			backfeet.Play ();
+			StartCoroutine(PlayTrumpetScript.PlayTrumpet (trumpet, horn, elephantAudio));
+			Debug.Log("now");
+
+		}
     }
+
+
 
 }

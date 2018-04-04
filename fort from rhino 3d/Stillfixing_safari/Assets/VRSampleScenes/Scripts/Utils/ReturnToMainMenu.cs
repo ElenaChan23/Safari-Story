@@ -33,10 +33,11 @@ namespace VRStandardAssets.Utils
         private IEnumerator FadeToMenu ()
         {
             // Wait for the screen to fade out.
-            yield return StartCoroutine (m_VRCameraFade.BeginFadeOut (true));
+            //yield return StartCoroutine (m_VRCameraFade.BeginFadeOut (true));
 
             // Load the main menu by itself.
-            SceneManager.LoadScene(m_MenuSceneName, LoadSceneMode.Single);
+            //SceneManager.LoadScene(m_MenuSceneName, LoadSceneMode.Single);
+			return null;
         }
     }
 }
