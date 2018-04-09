@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.84052664, g: 0.7679343, b: 0.59398186, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.84053594, g: 0.76796675, b: 0.5939671, a: 1}
+>>>>>>> miriam
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -638,7 +642,16 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 2100000, guid: 36ac08bf8a2d0ff4a9546100c0139088, type: 2}
-    m_RemovedComponents: []
+    - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
+      propertyPath: m_FadeDuration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
+      propertyPath: m_FadeInOnStart
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11451356, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &142430235 stripped
@@ -3926,6 +3939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToNewScene: 50
+  sceneToLoad: greenLightCars
 --- !u!1 &1171462388
 GameObject:
   m_ObjectHideFlags: 0
@@ -4645,6 +4659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timelines: {fileID: 1347824020}
+  sceneChanger: {fileID: 1161112964}
   frontfeet: {fileID: 1639092797}
   backfeet: {fileID: 2064522946}
   trumpet: {fileID: 8300000, guid: 7643e397cb61547829fe642dee384214, type: 3}
