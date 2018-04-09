@@ -8,7 +8,6 @@ using VRStandardAssets.Utils;
 public class DoorOpen : MonoBehaviour {
 
     public TimelineController timelines;
-    public sceneChange sceneChanger;
 
 	public AudioSource frontfeet;
 	public AudioSource backfeet;
@@ -62,14 +61,11 @@ public class DoorOpen : MonoBehaviour {
     {
         // If the user is looking at the rendering of the scene when the radial's selection finishes, activate the button.
 		if (m_GazeOver) {
-            sceneChanger.startTransitionTimer();
 			timelines.Play ();
-
 			backfeet.time = 1.0f;
 			frontfeet.Play ();
 			backfeet.Play ();
 			StartCoroutine(PlayTrumpetScript.PlayTrumpet (trumpet, horn, elephantAudio));
-
 			Debug.Log("now");
 
 		}

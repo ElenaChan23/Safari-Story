@@ -6,14 +6,13 @@ using UnityEngine.SceneManagement;
 public class sceneChange : MonoBehaviour {
 
     public float timeToNewScene;
-    public string sceneToLoad;
 
 	void goToScene()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        SceneManager.LoadScene("greenLightCars");
     }
 
-    public void startTransitionTimer()
+    private void Start()
     {
         Invoke("goToScene", timeToNewScene);
     }
