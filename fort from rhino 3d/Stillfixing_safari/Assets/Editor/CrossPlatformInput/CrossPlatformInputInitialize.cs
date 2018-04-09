@@ -19,7 +19,7 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
             if (!defines.Contains("CROSS_PLATFORM_INPUT"))
             {
                 SetEnabled("CROSS_PLATFORM_INPUT", true, false);
-                SetEnabled("MOBILE_INPUT", true, true);
+               // SetEnabled("MOBILE_INPUT", true, true);
             }
         }
 
@@ -27,7 +27,7 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
         [MenuItem("Mobile Input/Enable")]
         private static void Enable()
         {
-            SetEnabled("MOBILE_INPUT", true, true);
+            //SetEnabled("MOBILE_INPUT", true, true);
             switch (EditorUserBuildSettings.activeBuildTarget)
             {
                 case BuildTarget.Android:
