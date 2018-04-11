@@ -1094,10 +1094,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a3f829338fd6e4198b1e356904aa2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToOut: 10
-  fadeLength: 5
-  fadeAudio: 0
-  cameraFade: {fileID: 2028047482}
+  timeToGreen: 10
+  fadeLengthGreen: 5
+  fadeLengthBlack: 3
+  fadeAudioAtEnd: 1
+  cameraFade1: {fileID: 2028047482}
 --- !u!20 &1969162088 stripped
 Camera:
   m_PrefabParentObject: {fileID: 2061482, guid: ccf8c8cc05aad7b40a8deb4f73296da4,
@@ -1202,11 +1203,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_FadeColor.g
-      value: 1
+      value: 0.022058845
       objectReference: {fileID: 0}
     - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_FadeDuration
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 11495966, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_Enabled
@@ -1275,6 +1276,14 @@ Prefab:
     - target: {fileID: 22499000, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
+      propertyPath: m_FadeColor.r
+      value: 0.022221042
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
+      propertyPath: m_FadeColor.b
+      value: 0.022221042
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11420606, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}

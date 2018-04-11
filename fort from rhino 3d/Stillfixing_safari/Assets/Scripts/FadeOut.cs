@@ -6,19 +6,28 @@ namespace VRStandardAssets.Utils
 {
     public class FadeOut : MonoBehaviour {
 
-        public float timeToOut;
-        public float fadeLength;
-        public bool fadeAudio;
-        public VRCameraFade cameraFade;
+        public float timeToGreen;
+        public float fadeLengthGreen;
+        public float fadeLengthBlack;
+        public bool fadeAudioAtEnd;
+        public VRCameraFade cameraFade1;
 
-        void fadeOut()
+        void fadeToGreen()
         {
-            cameraFade.FadeOut(fadeLength, fadeAudio);
+            cameraFade1.OnFadeComplete += fadeToBlack;
+            cameraFade1.FadeOut(fadeLengthGreen, false);
         }
 
         private void Start()
         {
-            Invoke("fadeOut", timeToOut);
+            
+            Invoke("fadeToGreen", timeToGreen);
+            
+        }
+
+        void fadeToBlack()
+        {
+
         }
     }
 }
