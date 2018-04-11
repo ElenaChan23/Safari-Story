@@ -7,6 +7,7 @@ public class EndSceneAudio : MonoBehaviour {
 	public AudioSource AS1;
 	public AudioSource AS2;
 	public AudioSource AS3;
+	public AudioSource AS4;
 	private float transitionTime = 2.0f;
 
 	public void FadeAll() {
@@ -18,9 +19,11 @@ public class EndSceneAudio : MonoBehaviour {
 		if (AS2 != null) {
 			StartCoroutine(AudioFadeScript.FadeOut (AS2, transitionTime));
 		}
-
 		if (AS3 != null) {
 			StartCoroutine(AudioFadeScript.FadeOut (AS3, transitionTime));
+		}
+		if (AS4 != null) {
+			StartCoroutine(AudioFadeScript.FadeOut (AS4, transitionTime));
 		}
 	}
 

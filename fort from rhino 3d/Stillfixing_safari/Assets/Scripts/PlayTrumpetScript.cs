@@ -14,7 +14,7 @@ public static class PlayTrumpetScript{
 
 		elephantAudio.clip = horn;
 		elephantAudio.spatialBlend = 0.5f;
-		yield return new WaitForSeconds (8.0f);
+		yield return new WaitForSeconds (9.0f);
 		elephantAudio.Play();
 
 
