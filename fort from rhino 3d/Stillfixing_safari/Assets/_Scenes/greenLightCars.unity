@@ -1094,9 +1094,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a3f829338fd6e4198b1e356904aa2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToGreen: 10
-  fadeLengthGreen: 5
-  fadeLengthBlack: 3
+  timeToOut: 6
+  fadeLength: 3
   fadeAudioAtEnd: 1
   cameraFade1: {fileID: 2028047482}
 --- !u!20 &1969162088 stripped

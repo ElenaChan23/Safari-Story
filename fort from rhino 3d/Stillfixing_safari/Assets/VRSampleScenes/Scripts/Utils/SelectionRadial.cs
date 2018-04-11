@@ -12,7 +12,7 @@ namespace VRStandardAssets.Utils
     public class SelectionRadial : MonoBehaviour
     {
         public event Action OnSelectionComplete;                                                // This event is triggered when the bar has filled.
-
+        public float timeToActive;
 
         [SerializeField] private float m_SelectionDuration = 2f;                                // How long it takes for the bar to fill.
         [SerializeField] private bool m_HideOnStart = true;                                     // Whether or not the bar should be visible at the start.
@@ -47,8 +47,13 @@ namespace VRStandardAssets.Utils
             // Setup the radial to have no fill at the start and hide if necessary.
             m_Selection.fillAmount = 0f;
 
-            if(m_HideOnStart)
+            if (m_HideOnStart)
+            {
                 Hide();
+                Invoke("Show", timeToActive);
+            }
+                
+
         }
 
 
