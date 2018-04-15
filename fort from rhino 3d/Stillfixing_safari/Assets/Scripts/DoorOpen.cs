@@ -16,6 +16,8 @@ public class DoorOpen : MonoBehaviour {
 
 	public AudioSource elephantAudio;
 
+	private bool played = false;
+
     [SerializeField] private SelectionRadial m_SelectionRadial;         // This controls when the selection is complete.
     [SerializeField] private VRInteractiveItem m_InteractiveItem;       // The interactive item for where the user should click to load the level.
 
@@ -65,7 +67,10 @@ public class DoorOpen : MonoBehaviour {
 			backfeet.time = 1.0f;
 			frontfeet.Play ();
 			backfeet.Play ();
-			StartCoroutine(PlayTrumpetScript.PlayTrumpet (trumpet, horn, elephantAudio));
+			if (!played) {
+				played = true;
+				StartCoroutine (PlayTrumpetScript.PlayTrumpet (trumpet, horn, elephantAudio));
+			}
 			Debug.Log("now");
 
 		}
