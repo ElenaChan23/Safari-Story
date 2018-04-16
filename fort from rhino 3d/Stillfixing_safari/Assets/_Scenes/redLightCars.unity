@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   songClip: {fileID: 8300000, guid: 8b4e434549d8b474aa720878ee18a49d, type: 3}
-  radioClip: {fileID: 8300000, guid: 3170244f839d1490db6a5d553e64fc8e, type: 3}
+  radioClip: {fileID: 8300000, guid: e4294fdde17a341aca4711bd47e48be0, type: 3}
   africa: {fileID: 8300000, guid: 58a59d0928d9d43b0adc601f7bff6383, type: 3}
   startTime: 20
   fadeInTime: 2
@@ -1438,7 +1438,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

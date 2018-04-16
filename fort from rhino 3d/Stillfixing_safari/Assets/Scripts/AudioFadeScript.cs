@@ -36,6 +36,6 @@ public static class AudioFadeScript
 			yield return null;
 		}
 
-		audioSource.volume = 1f;
+		audioSource.volume = finalVolume;
 	}
 }
