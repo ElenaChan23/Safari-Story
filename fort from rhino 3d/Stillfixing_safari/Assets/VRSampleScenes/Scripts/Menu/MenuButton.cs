@@ -46,7 +46,7 @@ namespace VRStandardAssets.Menu
 
             m_GazeOver = true;
 
-         //   m_SelectionRadial.HandleDown();
+            m_SelectionRadial.HandleDown();
 
         }
 
@@ -58,7 +58,7 @@ namespace VRStandardAssets.Menu
 
             m_GazeOver = false;
 
-          //  m_SelectionRadial.HandleUp();
+            m_SelectionRadial.HandleUp();
         }
 
 
