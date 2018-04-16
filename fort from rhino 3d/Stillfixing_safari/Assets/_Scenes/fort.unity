@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8815724, g: 0.8182728, b: 0.6187183, a: 1}
+  m_IndirectSpecularColor: {r: 0.8815445, g: 0.81822234, b: 0.6186698, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5504,6 +5504,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1612849708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1612849705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a06ed5437aee46a5b5ed32c1ddcf391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trumpet: {fileID: 8300000, guid: 7643e397cb61547829fe642dee384214, type: 3}
+  horn: {fileID: 8300000, guid: 811dfa851de1a4803ba0cb6db321c027, type: 3}
+  elephantAudio: {fileID: 1612849707}
+  frontfeet: {fileID: 1639092797}
+  backfeet: {fileID: 2064522946}
 --- !u!4 &1612849710 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4074632844876814, guid: 71b35ea6a932d374090b41fb08d85e3c,

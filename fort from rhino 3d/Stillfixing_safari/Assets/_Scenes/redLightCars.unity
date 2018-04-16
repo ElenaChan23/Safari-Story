@@ -336,6 +336,7 @@ MonoBehaviour:
   AS1: {fileID: 1526736033}
   AS2: {fileID: 0}
   AS3: {fileID: 0}
+  AS4: {fileID: 0}
 --- !u!95 &218491341
 Animator:
   serializedVersion: 3
@@ -392,13 +393,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 419046260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f55442908879485c98d9e2e00fc9130, type: 3}
+  m_Script: {fileID: 11500000, guid: ef39902d581444651a83f5cef0661cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jackHammer: {fileID: 596836613}
   traffic: {fileID: 1712044939}
-  fadeInTime: 0
-  fadeOutTime: 0
+  fadeInTime: 1
+  fadeOutTime: 2
 --- !u!1 &445314704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,7 +1437,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1460,12 +1461,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3adce8687d96421a9dfa8a8083ed8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songClip: {fileID: 8300000, guid: 9e365aaa0e6f84a6f86fd3fbe9d33125, type: 3}
-  radioClip: {fileID: 8300000, guid: 3170244f839d1490db6a5d553e64fc8e, type: 3}
+  songClip: {fileID: 8300000, guid: 8b4e434549d8b474aa720878ee18a49d, type: 3}
+  radioClip: {fileID: 8300000, guid: e4294fdde17a341aca4711bd47e48be0, type: 3}
   africa: {fileID: 8300000, guid: 58a59d0928d9d43b0adc601f7bff6383, type: 3}
+  startTime: 0
   fadeInTime: 2
   musicTime: 5
   fadeOutTime: 2
+  jackhammer: {fileID: 596836613}
+  traffic: {fileID: 1712044939}
 --- !u!1 &1636653328
 GameObject:
   m_ObjectHideFlags: 0

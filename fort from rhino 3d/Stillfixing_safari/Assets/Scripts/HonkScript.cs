@@ -29,20 +29,20 @@ public class HonkScript : MonoBehaviour
 		audio.clip = mediumHonk;
 		audio.Play ();
 		yield return new WaitForSeconds (1.0f);
-		audio.Play ();
+/*		audio.Play ();
 		yield return new WaitForSeconds (1.5f);
 
 		audio.clip = longHonk;
 		audio.Play ();
 		yield return new WaitForSeconds (3.7f);
-
+/*
 
 		audio.clip = shortHonk;
 		audio.Play();
 		yield return new WaitForSeconds (0.3f);
 		audio.Play();
 		yield return new WaitForSeconds (0.3f);
-
+*/
 		audio.clip = finalHonk;
 		audio.Play ();
 		yield return new WaitForSeconds (3.0f);
