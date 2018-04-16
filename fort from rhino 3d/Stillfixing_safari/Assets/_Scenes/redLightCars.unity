@@ -219,7 +219,6 @@ GameObject:
   - component: {fileID: 218491338}
   - component: {fileID: 218491337}
   - component: {fileID: 218491339}
-  - component: {fileID: 218491342}
   - component: {fileID: 218491341}
   m_Layer: 0
   m_Name: BumperSticker
@@ -346,7 +345,7 @@ Animator:
   m_GameObject: {fileID: 218491332}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9be9573d59262a4409cf00d89486ca6c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -354,30 +353,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!320 &218491342
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 218491332}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: e7bf39f496dca044a99d25345a0d3c71, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 0}
-    value: {fileID: 0}
-  - key: {fileID: 114357818515456450, guid: e7bf39f496dca044a99d25345a0d3c71, type: 2}
-    value: {fileID: 218491332}
-  - key: {fileID: 114091924688548356, guid: e7bf39f496dca044a99d25345a0d3c71, type: 2}
-    value: {fileID: 445314704}
-  - key: {fileID: 0}
-    value: {fileID: 1157509873}
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &445314704
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +365,8 @@ GameObject:
   - component: {fileID: 445314707}
   - component: {fileID: 445314706}
   - component: {fileID: 445314705}
+  - component: {fileID: 445314711}
+  - component: {fileID: 445314710}
   m_Layer: 0
   m_Name: DummySticker
   m_TagString: Untagged
@@ -474,13 +451,52 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 445314704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 62.475, y: 1.138, z: 45.175}
+  m_LocalPosition: {x: 62.475, y: 1.138, z: 45.17}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1636653329}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &445314710
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445314704}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!320 &445314711
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445314704}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 9a36aa501fc5f3f43a234fa10c10f417, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114516313947676532, guid: 9a36aa501fc5f3f43a234fa10c10f417, type: 2}
+    value: {fileID: 445314704}
+  - key: {fileID: 114404883015372706, guid: 9a36aa501fc5f3f43a234fa10c10f417, type: 2}
+    value: {fileID: 445314704}
+  - key: {fileID: 114353725841964288, guid: 9a36aa501fc5f3f43a234fa10c10f417, type: 2}
+    value: {fileID: 218491332}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &474262837
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,7 +827,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1114228277
 GameObject:
@@ -907,10 +923,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1157509873 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 101810, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
-  m_PrefabInternal: {fileID: 1986610390}
 --- !u!1 &1159191982
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,7 +992,7 @@ Transform:
   m_LocalScale: {x: 0.29051876, y: 0.29051876, z: 0.29051876}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1361862030
 Prefab:
@@ -1476,6 +1488,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1738504446 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11427250, guid: ccf8c8cc05aad7b40a8deb4f73296da4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1986610390}
+  m_Script: {fileID: 11500000, guid: 8902ef04f323e444b98d2e4fd80a56ab, type: 3}
 --- !u!1 &1833597058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,15 +1604,15 @@ Prefab:
     - target: {fileID: 11495966, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_VrInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1738504446}
     - target: {fileID: 11495966, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_ShowDebugRay
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11458036, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_VRInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1738504446}
     - target: {fileID: 11491538, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_Sprite
       value: 
@@ -1618,16 +1636,20 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 36ac08bf8a2d0ff4a9546100c0139088, type: 2}
     - target: {fileID: 11458036, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_SelectionDuration
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11458036, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_HideOnStart
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11458036, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: timeToActive
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11458036, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
+      propertyPath: m_VRIntItem
+      value: 
+      objectReference: {fileID: 218491338}
     m_RemovedComponents:
     - {fileID: 11451356, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}

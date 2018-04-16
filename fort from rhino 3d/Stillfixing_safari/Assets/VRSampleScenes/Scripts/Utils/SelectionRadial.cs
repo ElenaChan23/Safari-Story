@@ -12,13 +12,13 @@ namespace VRStandardAssets.Utils
     public class SelectionRadial : MonoBehaviour
     {
         public event Action OnSelectionComplete;                                                // This event is triggered when the bar has filled.
-        public float timeToActive;
+
 
         [SerializeField] private float m_SelectionDuration = 2f;                                // How long it takes for the bar to fill.
         [SerializeField] private bool m_HideOnStart = true;                                     // Whether or not the bar should be visible at the start.
         [SerializeField] private Image m_Selection;                                             // Reference to the image who's fill amount is adjusted to display the bar.
         [SerializeField] private VRInput m_VRInput;                                             // Reference to the VRInput so that input events can be subscribed to.
-        
+
 
         private Coroutine m_SelectionFillRoutine;                                               // Used to start and stop the filling coroutine based on input.
         private bool m_IsSelectionRadialActive;                                                    // Whether or not the bar is currently useable.
@@ -48,12 +48,7 @@ namespace VRStandardAssets.Utils
             m_Selection.fillAmount = 0f;
 
             if (m_HideOnStart)
-            {
                 Hide();
-                Invoke("Show", timeToActive);
-            }
-                
-
         }
 
 
@@ -61,11 +56,6 @@ namespace VRStandardAssets.Utils
         {
             m_Selection.gameObject.SetActive(true);
             m_IsSelectionRadialActive = true;
-
-            if (m_IsSelectionRadialActive)
-            {
-                m_SelectionFillRoutine = StartCoroutine(FillSelectionRadial());
-            }
         }
 
 
@@ -75,7 +65,7 @@ namespace VRStandardAssets.Utils
             m_IsSelectionRadialActive = false;
 
             // This effectively resets the radial for when it's shown again.
-            m_Selection.fillAmount = 0f;            
+            m_Selection.fillAmount = 0f;
         }
 
 
@@ -87,7 +77,7 @@ namespace VRStandardAssets.Utils
             // Create a timer and reset the fill amount.
             float timer = 0f;
             m_Selection.fillAmount = 0f;
-            
+
             // This loop is executed once per frame until the timer exceeds the duration.
             while (timer < m_SelectionDuration)
             {
@@ -114,13 +104,13 @@ namespace VRStandardAssets.Utils
         }
 
 
-        public IEnumerator WaitForSelectionRadialToFill ()
+        public IEnumerator WaitForSelectionRadialToFill()
         {
             // Set the radial to not filled in order to wait for it.
             m_RadialFilled = false;
 
             // Make sure the radial is visible and usable.
-            Show ();
+            Show();
 
             // Check every frame if the radial is filled.
             while (!m_RadialFilled)
@@ -129,11 +119,11 @@ namespace VRStandardAssets.Utils
             }
 
             // Once it's been used make the radial invisible.
-            Hide ();
+            Hide();
         }
 
 
-        private void HandleDown()
+        public void HandleDown()
         {
             // If the radial is active start filling it.
             if (m_IsSelectionRadialActive)
@@ -143,12 +133,12 @@ namespace VRStandardAssets.Utils
         }
 
 
-        private void HandleUp()
+        public void HandleUp()
         {
             // If the radial is active stop filling it and reset it's amount.
             if (m_IsSelectionRadialActive)
             {
-                if(m_SelectionFillRoutine != null)
+                if (m_SelectionFillRoutine != null)
                     StopCoroutine(m_SelectionFillRoutine);
 
                 m_Selection.fillAmount = 0f;
