@@ -8,7 +8,12 @@ public class sceneChange : MonoBehaviour {
     public float timeToNewScene;
     public string sceneToLoad;
 
-	void goToScene()
+    private void Start()
+    {
+        startTransitionTimer();
+    }
+
+    void goToScene()
     {
         StartCoroutine(LoadAsyncScene());
     }

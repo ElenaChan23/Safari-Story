@@ -26,6 +26,8 @@ public class DoorOpen : MonoBehaviour {
 
     private void OnEnable()
     {
+        Console.Write("Enabled");
+
         m_InteractiveItem.OnOver += HandleOver;
         m_InteractiveItem.OnOut += HandleOut;
         m_SelectionRadial.OnSelectionComplete += HandleSelectionComplete;
@@ -43,6 +45,7 @@ public class DoorOpen : MonoBehaviour {
     private void HandleOver()
     {
         // When the user looks at the rendering of the scene, show the radial.
+        Console.Write("looked at");
         m_SelectionRadial.Show();
 
         m_GazeOver = true;

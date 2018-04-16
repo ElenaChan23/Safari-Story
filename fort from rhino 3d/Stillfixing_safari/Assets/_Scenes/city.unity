@@ -2622,6 +2622,10 @@ Prefab:
       propertyPath: m_Name
       value: Building Sky_small_color03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0238b0371d23a1b4d98b05c3ff3b4df7, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 2}
   m_IsPrefabParent: 0
@@ -13018,7 +13022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32f41f030d659c149b020c507e64e872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageWidth: 2048
+  imageWidth: 4096
   saveAsJPEG: 1
 --- !u!1001 &696401427
 Prefab:
@@ -30006,6 +30010,10 @@ Prefab:
       propertyPath: m_Name
       value: Building Sky_small_color03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf528230e5d0dcd42ab2d20dcda96917, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 2}
   m_IsPrefabParent: 0
@@ -30098,6 +30106,10 @@ Prefab:
       propertyPath: m_Name
       value: Building Sky_small_color03 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5008df5fba3101c4c81e4cf6b008c663, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 2}
   m_IsPrefabParent: 0
@@ -31148,6 +31160,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 843
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5dd9f8de2583df543859013bcdc56639, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bf630e064503ad541ab39df076952029, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5dd9f8de2583df543859013bcdc56639, type: 2}
   m_IsPrefabParent: 0
@@ -40307,6 +40323,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 842
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ba66acee62948c24baacd1186810d424, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 2}
   m_IsPrefabParent: 0
