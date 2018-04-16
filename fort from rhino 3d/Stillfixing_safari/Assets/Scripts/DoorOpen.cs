@@ -8,6 +8,7 @@ using VRStandardAssets.Utils;
 public class DoorOpen : MonoBehaviour {
 
     public TimelineController timelines;
+    public sceneChange sceneChanger;
 
 	public AudioSource frontfeet;
 	public AudioSource backfeet;
@@ -15,8 +16,6 @@ public class DoorOpen : MonoBehaviour {
 	public AudioClip horn;
 
 	public AudioSource elephantAudio;
-
-	private bool played = false;
 
     [SerializeField] private SelectionRadial m_SelectionRadial;         // This controls when the selection is complete.
     [SerializeField] private VRInteractiveItem m_InteractiveItem;       // The interactive item for where the user should click to load the level.
@@ -66,14 +65,14 @@ public class DoorOpen : MonoBehaviour {
     {
         // If the user is looking at the rendering of the scene when the radial's selection finishes, activate the button.
 		if (m_GazeOver) {
+            sceneChanger.startTransitionTimer();
 			timelines.Play ();
+
 			backfeet.time = 1.0f;
 			frontfeet.Play ();
 			backfeet.Play ();
-			if (!played) {
-				played = true;
-				StartCoroutine (PlayTrumpetScript.PlayTrumpet (trumpet, horn, elephantAudio));
-			}
+			StartCoroutine(PlayTrumpetScript.PlayTrumpet (trumpet, horn, elephantAudio));
+
 			Debug.Log("now");
 
 		}

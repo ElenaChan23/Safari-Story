@@ -3,22 +3,20 @@ using System.Collections;
 
 public static class AudioFadeScript
 {
-	public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime, float finalVolume = 0.0f)
+	public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
 	{
 
 		float startVolume = audioSource.volume;
 
-		while (audioSource.volume > finalVolume)
+		while (audioSource.volume > 0)
 		{
 			audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
 
 			yield return null;
 		}
 
-		if (audioSource.volume <= 0) {
-			audioSource.Stop ();
-			audioSource.volume = startVolume;
-		}
+		audioSource.Stop();
+		audioSource.volume = startVolume;
 	}
 
 	public static IEnumerator FadeIn(AudioSource audioSource, float FadeTime, float finalVolume)
@@ -36,6 +34,6 @@ public static class AudioFadeScript
 			yield return null;
 		}
 
-		audioSource.volume = finalVolume;
+		audioSource.volume = 1f;
 	}
 }
