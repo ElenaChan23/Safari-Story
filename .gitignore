@@ -97,3 +97,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.ide
