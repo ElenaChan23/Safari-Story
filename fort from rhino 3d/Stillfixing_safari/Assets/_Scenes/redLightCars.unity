@@ -1485,6 +1485,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ec7be87852e30f49a754a666cd49e56, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 2}
   m_IsPrefabParent: 0
@@ -1713,6 +1717,10 @@ Prefab:
       propertyPath: m_Name
       value: Props_Traffic Signal_big (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0ea03c6aa98d5224cb797d69c8ef34ca, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 2}
   m_IsPrefabParent: 0
