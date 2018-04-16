@@ -5,7 +5,6 @@ public static class PlayTrumpetScript{
 
 	public static IEnumerator PlayTrumpet(AudioClip trumpet, AudioClip horn, AudioSource elephantAudio)
 	{
-		Debug.Log ("butt");
 		yield return new WaitForSeconds (23.0f);
 		elephantAudio.clip = trumpet;
 		elephantAudio.Play();
