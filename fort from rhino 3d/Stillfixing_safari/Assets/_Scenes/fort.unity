@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8834008, g: 0.81803864, b: 0.617601, a: 1}
+  m_IndirectSpecularColor: {r: 0.8815724, g: 0.8182728, b: 0.6187183, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -910,6 +910,7 @@ GameObject:
   - component: {fileID: 182752792}
   - component: {fileID: 182752791}
   - component: {fileID: 182752790}
+  - component: {fileID: 182752794}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -983,6 +984,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 130, y: 10, z: 0}
+--- !u!95 &182752794
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 182752789}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &189008783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4841,14 +4859,18 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 0}
     value: {fileID: 1347824013}
-  - key: {fileID: 114019026001018404, guid: 9af06774ff9941a4fbcdcf3d101f34a2, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 0}
   - key: {fileID: 0}
     value: {fileID: 1347824013}
-  - key: {fileID: 114987932021761436, guid: 9af06774ff9941a4fbcdcf3d101f34a2, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 0}
-  - key: {fileID: 114726879893489306, guid: 9af06774ff9941a4fbcdcf3d101f34a2, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 1347824013}
+  - key: {fileID: 114789290643500864, guid: 9af06774ff9941a4fbcdcf3d101f34a2, type: 2}
+    value: {fileID: 182752789}
+  - key: {fileID: 114371778181379350, guid: 9af06774ff9941a4fbcdcf3d101f34a2, type: 2}
+    value: {fileID: 1541931279}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1347824020
@@ -5467,6 +5489,7 @@ GameObject:
   - component: {fileID: 1541931282}
   - component: {fileID: 1541931281}
   - component: {fileID: 1541931280}
+  - component: {fileID: 1541931284}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -5540,6 +5563,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 130, y: -10, z: 0}
+--- !u!95 &1541931284
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541931279}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1582269430
 GameObject:
   m_ObjectHideFlags: 0
