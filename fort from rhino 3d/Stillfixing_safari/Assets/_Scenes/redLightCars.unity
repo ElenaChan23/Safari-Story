@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17474002, g: 0.16598722, b: 0.16243339, a: 1}
+  m_IndirectSpecularColor: {r: 0.17471248, g: 0.1659793, b: 0.1624251, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -334,8 +334,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS1: {fileID: 1526736033}
-  AS2: {fileID: 0}
-  AS3: {fileID: 0}
+  AS2: {fileID: 596836613}
+  AS3: {fileID: 1712044939}
   AS4: {fileID: 0}
 --- !u!95 &218491341
 Animator:
@@ -1882,6 +1882,10 @@ Prefab:
       propertyPath: m_VRIntItem
       value: 
       objectReference: {fileID: 218491338}
+    - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
+      propertyPath: m_FadeDuration
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11451356, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
