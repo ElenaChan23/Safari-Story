@@ -28,8 +28,8 @@ public class RadioScript : MonoBehaviour
 		yield return new WaitForSeconds(fadeInTime);
 		yield return new WaitForSeconds(musicTime);
 		StartCoroutine(AudioFadeScript.FadeOut (audio, fadeOutTime - 0.1f, 0.1f));
-		StartCoroutine(AudioFadeScript.FadeOut (traffic, fadeOutTime, 0.4f));
-		StartCoroutine(AudioFadeScript.FadeOut (jackhammer, fadeOutTime, 0.5f));
+		StartCoroutine(AudioFadeScript.FadeOut (traffic, fadeOutTime + 2f, 0.4f));
+		StartCoroutine(AudioFadeScript.FadeOut (jackhammer, fadeOutTime + 2f, 0.4f));
 		yield return new WaitForSeconds(fadeOutTime);
 		audio.clip = radioClip;
 		audio.time = 0;

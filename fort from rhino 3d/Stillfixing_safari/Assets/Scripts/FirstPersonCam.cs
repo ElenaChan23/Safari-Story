@@ -9,6 +9,8 @@ public class FirstPersonCam : MonoBehaviour {
 	private float yaw = 0.0f;
 	private float pitch = 0.0f;
 
+	public Camera cam;
+
 	private void Start() {
 		Cursor.visible = true;
 	}
@@ -20,7 +22,7 @@ public class FirstPersonCam : MonoBehaviour {
 
 
 		if ((-80.0f < pitch) && (pitch < 80.0f)) {
-			transform.eulerAngles = new Vector3 (pitch, yaw, 0.0f);
+			cam.transform.eulerAngles = new Vector3 (pitch, yaw, 0.0f);
 		}  else {
 			pitch = oldpitch;
 		}
