@@ -345,6 +345,7 @@ MonoBehaviour:
   AS2: {fileID: 596836613}
   AS3: {fileID: 1712044939}
   AS4: {fileID: 0}
+  echo: {fileID: 1526736035}
 --- !u!95 &218491341
 Animator:
   serializedVersion: 3
@@ -1778,6 +1779,7 @@ GameObject:
   - component: {fileID: 1526736030}
   - component: {fileID: 1526736034}
   - component: {fileID: 1526736033}
+  - component: {fileID: 1526736035}
   m_Layer: 0
   m_Name: Radio
   m_TagString: Untagged
@@ -1951,6 +1953,17 @@ MonoBehaviour:
   fadeOutTime: 2
   jackhammer: {fileID: 596836613}
   traffic: {fileID: 1712044939}
+--- !u!168 &1526736035
+AudioEchoFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1526736028}
+  m_Enabled: 0
+  m_Delay: 160
+  m_DecayRatio: 0.5
+  m_WetMix: 1
+  m_DryMix: 0.1
 --- !u!1 &1533465597
 GameObject:
   m_ObjectHideFlags: 0
