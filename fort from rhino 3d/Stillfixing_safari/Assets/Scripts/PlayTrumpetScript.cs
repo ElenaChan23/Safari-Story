@@ -24,10 +24,11 @@ public class PlayTrumpetScript : MonoBehaviour {
 		elephantAudio.time = 0;
 		elephantAudio.Play();
 
-		elephantAudio.clip = horn;
+
 		elephantAudio.spatialBlend = 0.5f;
 		yield return new WaitForSeconds (8.0f);
 		elephantAudio.Play();
+		elephantAudio.clip = horn;
 		yield return new WaitForSeconds (6.0f);
 		elephantAudio.time = 0;
 		elephantAudio.Play();

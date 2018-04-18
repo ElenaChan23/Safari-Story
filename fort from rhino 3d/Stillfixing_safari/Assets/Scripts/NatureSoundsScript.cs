@@ -10,6 +10,7 @@ public class NatureSoundsScript : MonoBehaviour {
 	public AudioSource bird1;
 	public AudioSource bird2;
 	public AudioSource bird3;
+	public AudioSource music;
 
 
 
@@ -19,6 +20,7 @@ public class NatureSoundsScript : MonoBehaviour {
 		StartCoroutine(AudioFadeScript.FadeIn (bird1, fadeInTime, 1.0f));
 		StartCoroutine(AudioFadeScript.FadeIn (bird2, fadeInTime, 1.0f));
 		StartCoroutine(AudioFadeScript.FadeIn (bird3, fadeInTime, 1.0f));
+		StartCoroutine(AudioFadeScript.FadeIn (music, fadeInTime, 0.1f));
 	}
 
 }

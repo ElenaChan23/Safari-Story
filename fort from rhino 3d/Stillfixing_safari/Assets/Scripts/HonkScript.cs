@@ -48,7 +48,7 @@ public class HonkScript : MonoBehaviour
 		yield return new WaitForSeconds (3.0f);
 		StartCoroutine(AudioFadeScript.FadeOut (audio, fadeOutTime));
 		radio.time = 74.4f;
-		StartCoroutine(AudioFadeScript.FadeIn (radio, fadeOutTime, 0.6f));
+		StartCoroutine(AudioFadeScript.FadeIn (radio, fadeOutTime, 0.4f));
 
 
 	}
