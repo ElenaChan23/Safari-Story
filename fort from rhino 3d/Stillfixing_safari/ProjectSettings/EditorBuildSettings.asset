@@ -32,3 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/greenLightCars.unity
     guid: e407fb477b97de74381ac3b70bfb20df
+  - enabled: 1
+    path: Assets/_Scenes/Outro.unity
+    guid: 7ae3e43412fc94b44940d73c1528bf54
+  - enabled: 1
+    path: Assets/_Scenes/Intro.unity
+    guid: 9b41cd1b2265f324183625a3f76988f3
