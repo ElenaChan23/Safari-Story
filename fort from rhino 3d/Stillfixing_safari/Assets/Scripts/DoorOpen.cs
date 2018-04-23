@@ -10,14 +10,6 @@ public class DoorOpen : MonoBehaviour {
     public TimelineController timelines;
     public sceneChange sceneChanger;
 
-	public AudioSource frontfeet;
-	public AudioSource backfeet;
-	public AudioClip trumpet;
-	public AudioClip horn;
-
-	public AudioSource elephantAudio;
-
-	private bool played = false;
 
     [SerializeField] private SelectionRadial m_SelectionRadial;         // This controls when the selection is complete.
     [SerializeField] private VRInteractiveItem m_InteractiveItem;       // The interactive item for where the user should click to load the level.
@@ -70,11 +62,6 @@ public class DoorOpen : MonoBehaviour {
             sceneChanger.startTransitionTimer();
 			timelines.Play ();
 
-			backfeet.time = 1.0f;
-			if (!played) {
-				played = true;
-			}
-			Debug.Log("now");
 
 		}
     }
