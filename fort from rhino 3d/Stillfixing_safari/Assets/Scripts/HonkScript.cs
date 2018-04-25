@@ -43,13 +43,13 @@ public class HonkScript : MonoBehaviour
 		audio.Play();
 		yield return new WaitForSeconds (0.3f);
 */
+
 		audio.clip = finalHonk;
 		audio.Play ();
-		yield return new WaitForSeconds (3.0f);
+		yield return new WaitForSeconds (1.5f);
 		StartCoroutine(AudioFadeScript.FadeOut (audio, fadeOutTime));
-		radio.time = 74.4f;
-		StartCoroutine(AudioFadeScript.FadeIn (radio, fadeOutTime, 0.4f));
-
+		radio.GetComponent<AfricaAudio>().PlayAfrica();
+	
 
 	}
 }

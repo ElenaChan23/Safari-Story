@@ -14,7 +14,7 @@ public class PlayTrumpetScript : MonoBehaviour {
 		yield return new WaitForSeconds (12.0f);
 		frontfeet.Play ();
 		yield return new WaitForSeconds (1.0f);
-		backfeet.Play ();
+		//backfeet.Play ();
 
 		yield return new WaitForSeconds (9.0f);
 		elephantAudio.clip = trumpet;
@@ -30,6 +30,9 @@ public class PlayTrumpetScript : MonoBehaviour {
 		elephantAudio.Play();
 		elephantAudio.clip = horn;
 		yield return new WaitForSeconds (6.0f);
+		elephantAudio.time = 0;
+		elephantAudio.Play();
+		yield return new WaitForSeconds (3.0f);
 		elephantAudio.time = 0;
 		elephantAudio.Play();
 
