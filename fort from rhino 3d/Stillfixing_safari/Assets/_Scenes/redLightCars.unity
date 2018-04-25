@@ -479,7 +479,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1143994381
+  randomSeed: -1317207876
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5765,6 +5765,8 @@ MonoBehaviour:
   fadeLength: 5
   fadeAudioAtEnd: 0
   vrCamera: {fileID: 1986610393}
+  echoFade: 1
+  radio: {fileID: 218491332}
 --- !u!114 &1813061485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5967,7 +5969,7 @@ MonoBehaviour:
   m_FadeImage: {fileID: 963541466}
   m_DefaultSnapshot: {fileID: 24500003, guid: d87b47ce31deb1f44bbe100832f18eb4, type: 2}
   m_FadedSnapshot: {fileID: 24515028, guid: d87b47ce31deb1f44bbe100832f18eb4, type: 2}
-  m_FadeColor: {r: 0, g: 0, b: 0, a: 1}
+  m_FadeColor: {r: 1, g: 0.8901961, b: 0, a: 1}
   m_FadeDuration: 5
   m_FadeInOnSceneLoad: 1
   m_FadeInOnStart: 1

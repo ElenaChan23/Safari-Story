@@ -33,13 +33,13 @@ public class RadioScript : MonoBehaviour
 		yield return new WaitForSeconds(fadeOutTime);
 		audio.clip = radioClip;
 		audio.time = 0;
-		audio.volume = 0.7f;
+		audio.volume = 0.77f;
 		audio.Play();
 		yield return new WaitForSeconds (5.1f);
 		StartCoroutine(AudioFadeScript.FadeOut (traffic, fadeOutTime, 0.2f));
 		yield return new WaitForSeconds (18.5f);
 		audio.Stop ();
-		yield return new WaitForSeconds (0.8f);
+		yield return new WaitForSeconds (0.4f);
 		audio.clip = africa;
 		StartCoroutine(AudioFadeScript.FadeIn (audio, fadeInTime, 0.5f));
 	}

@@ -14,6 +14,8 @@ namespace VRStandardAssets.Utils
         public float fadeLength;
         public bool fadeAudioAtEnd;
         public VRCameraFade vrCamera;
+        public bool echoFade;
+        public GameObject radio;
 
         private void Start()
         {
@@ -22,8 +24,13 @@ namespace VRStandardAssets.Utils
 
         void goToScene()
         {
+            if (echoFade)
+            {
+                radio.GetComponent<EndSceneAudio>().FadeAll();
+            }
             StartCoroutine(LoadAsyncScene());
             Fade(fadeLength, fadeAudioAtEnd);
+ 
         }
 
         public void startTransitionTimer()

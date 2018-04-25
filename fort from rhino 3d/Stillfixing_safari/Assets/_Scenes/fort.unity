@@ -25893,6 +25893,8 @@ MonoBehaviour:
   fadeLength: 0
   fadeAudioAtEnd: 0
   vrCamera: {fileID: 2024814332}
+  echoFade: 0
+  radio: {fileID: 0}
 --- !u!136 &544810232
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25931,7 +25933,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 544810230}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -7.047, y: -1.81, z: 5.692}
+  m_LocalPosition: {x: -7.047, y: -1.78, z: 5.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1944827576}
@@ -38965,7 +38967,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 860052520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8277586, y: -2.54, z: 1.1999999}
+  m_LocalPosition: {x: -3.8277586, y: -2.593, z: 1.1999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 397028480}
@@ -82959,7 +82961,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 493278, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.299
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 493278, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -82987,15 +82989,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 493278, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 493278, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 493278, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 11491538, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_Enabled
@@ -83012,11 +83014,11 @@ Prefab:
         type: 3}
     - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_FadeColor.r
-      value: 0.9558824
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_FadeColor.g
-      value: 0.8899594
+      value: 0.8901961
       objectReference: {fileID: 0}
     - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_FadeColor.b
