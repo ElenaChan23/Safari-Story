@@ -24,6 +24,7 @@ namespace VRStandardAssets.Utils
         private bool m_IsSelectionRadialActive;                                                    // Whether or not the bar is currently useable.
         private bool m_RadialFilled;                                                               // Used to allow the coroutine to wait for the bar to fill.
 
+        public ParticleSystem particles;
 
         public float SelectionDuration { get { return m_SelectionDuration; } }
 
@@ -125,6 +126,8 @@ namespace VRStandardAssets.Utils
 
         public void HandleDown()
         {
+            particles.Play();
+
             // If the radial is active start filling it.
             if (m_IsSelectionRadialActive)
             {
@@ -135,6 +138,7 @@ namespace VRStandardAssets.Utils
 
         public void HandleUp()
         {
+            particles.Stop();
             // If the radial is active stop filling it and reset it's amount.
             if (m_IsSelectionRadialActive)
             {
