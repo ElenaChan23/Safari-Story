@@ -4627,7 +4627,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 0
-  m_Color: {r: 1, g: 0.88965523, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 0.86424094, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -5969,7 +5969,7 @@ MonoBehaviour:
   m_FadeImage: {fileID: 963541466}
   m_DefaultSnapshot: {fileID: 24500003, guid: d87b47ce31deb1f44bbe100832f18eb4, type: 2}
   m_FadedSnapshot: {fileID: 24515028, guid: d87b47ce31deb1f44bbe100832f18eb4, type: 2}
-  m_FadeColor: {r: 1, g: 0.8901961, b: 0, a: 1}
+  m_FadeColor: {r: 1, g: 1, b: 0.8627451, a: 1}
   m_FadeDuration: 5
   m_FadeInOnSceneLoad: 1
   m_FadeInOnStart: 1

@@ -83018,11 +83018,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_FadeColor.g
-      value: 0.8901961
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_FadeColor.b
-      value: 0
+      value: 0.8627451
       objectReference: {fileID: 0}
     - target: {fileID: 11456534, guid: ccf8c8cc05aad7b40a8deb4f73296da4, type: 2}
       propertyPath: m_FadeDuration
