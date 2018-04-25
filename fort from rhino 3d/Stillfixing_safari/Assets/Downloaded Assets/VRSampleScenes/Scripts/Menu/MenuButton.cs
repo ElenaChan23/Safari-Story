@@ -82,13 +82,13 @@ namespace VRStandardAssets.Menu
 
 			GetComponent<EndSceneAudio> ().FadeAll ();
 
-            // Wait for the camera to fade out.
-            yield return StartCoroutine(m_CameraFade.BeginFadeOut(true));
+            
 
             // Load the level.
-            SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
+            SceneManager.LoadSceneAsync(m_SceneToLoad, LoadSceneMode.Single);
 
-
+            // Wait for the camera to fade out.
+            yield return StartCoroutine(m_CameraFade.BeginFadeOut(true));
         }
     }
 }
